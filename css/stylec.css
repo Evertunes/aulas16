@@ -1,13 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Inter:wght@100;500&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "indie", sans-serif;
   }
   
   body
   {
       background-color:#E5E5E5;
   }
+
+  main{
+    display: flex;
+    justify-content:center ;
+    margin: 5%;
+  }
+
   header .desconto {
     display: flex;
     align-items: center;
@@ -26,6 +38,39 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
+.container{
+  color:white;
+  width: 954px;
+  height: 832px;
+  background-color: #00669f;
+  border-radius: 49px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  flex-direction:column;
+  text-align: center;
+}
+
+.coluna{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  height: 10%;
+  align-self: center;
+}
+
+.containerconteudo{
+  padding:2%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+hr{
+  color: white;
+  background-color: white;
+}
   footer {
     display: flex;
     align-items: center;
