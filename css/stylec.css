@@ -54,7 +54,14 @@ form{
 .containerconteudo{
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+}
+
+.coluna{
   
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 footer {
