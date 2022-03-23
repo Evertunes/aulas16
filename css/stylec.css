@@ -51,18 +51,33 @@ form{
   flex-wrap: wrap;
 }
 
+.required:before {
+  content:"*"; 
+}
+
 .containerconteudo{
+  padding-top: 30px;
+  gap:30px;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  width: 100%;
 }
 
 .coluna{
-  
+  width: 50%;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  gap:10px;
 }
+
+.coluna label{
+  display: block;
+}
+
+.coluna input{
+  width: 100%;
+}
+
 
 footer {
   display: flex;

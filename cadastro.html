@@ -22,72 +22,84 @@
 
     <main>
         <form action="">
-            <div class="container">
-                <h1>Adicionar seu super-herói</h1>
-                <span class="add">Adicione seu personagem favorito completando as informações</span>
-                <div class="containerconteudo">
-                    <div class="coluna">
-                        <div>
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" />
-                        </div>
-                        <div>
-                        <label for="date">Data de Nascimento</label>
-                        <input type="date" name="date" id="date" />
-                        </div>
-                        <div>
-                        <input type="textarea" name="descricao" id="'descricao" placeholder="Descrição" />
-                        </div>
+            <fieldset>
+                <div class="container">
+                    <h1>Adicionar seu super-herói</h1>
+                    <span class="add">Adicione seu personagem favorito completando as informações</span>
+                    <div class="containerconteudo">
+                        <div class="coluna">
+                            <div>
+                                <label class="required" for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" required />
+                            </div>
+                            <div>
+                                <label for="date">Data de Nascimento</label>
+                                <input type="date" name="date" id="date" />
+                            </div>
+                            <div>
+                                <input type="textarea" name="descricao" id="'descricao" placeholder="Descrição" />
+                            </div>
                         </div>
 
-                    <div class="coluna">
-                        <div>
-                        <label>Espécie</label></div>
-                        <div>
-                        <select name="especie">
-                            <option value="text">Mutante</option>
-                            <option value="text">Alien</option>
-                            <option value="text">Humano</option>
-                        </select>
-                        </div>
-                        
-                        <div>
-                        <label>Adicionar foto</label>
-                        <input type="file" name="imagem" id="imagem" placeholder="selecione uma imagem" />
-                        </div>
-                        <div>
-                        <label>Poderes</label>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="voar" name="voar" /
-                        <label for="voar">Voar</label>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="forca" name="forca" />
-                        <label for="forca">Super Força</label>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="laser" name="laser" />
-                        <label for="laser">Visão de raio laser</label>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="rico" name="rico" />                   
-                        <label for="rico">Super rico</label>
-                        </div>
-                        <div><hr size="5" width="100%" /></div>
+                        <div class="coluna">
+                            <div>
+                                <label class="required">Espécie</label>
+                            </div>
+                            <div>
+                                <select name="especie">
+                                    <option value="text">Mutante</option>
+                                    <option value="text">Alien</option>
+                                    <option value="text">Humano</option>
+                                </select>
+                            </div>
 
-                        <div><label>Tipo de personagem</label></div>
-                        <div>
-                        <input type="radio" name="tipo" id="heroi" value="heroi" checked />
-                        <label for="heroi">Herói/Heroína</label>
-                        </div>
-                        <div>
-                        <input type="radio" name="tipo" id="vilao" value="heroi"/>
-                        <label for="vilao">Vilão / Vilã</label>
+                            <div>
+                                <label>Adicionar foto</label>
+                                <input type="file" name="imagem" id="imagem" placeholder="selecione uma imagem" />
+                            </div>
+                            <div class="poder">
+                                <div class="poderes">
+                                    <label>Poderes</label>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox" id="voar" name="voar" />
+                                            <label for="voar">Voar</label>
+                                        </div>
+
+                                        <div class="check">
+                                            <input type="checkbox" id="forca" name="forca" />
+                                            <label for="forca">Super Força</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" id="laser" name="laser" />
+                                            <label for="laser">Visão de raio laser</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" id="rico" name="rico" />
+                                            <label for="rico">Super rico</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <hr size="5" width="100%" />
+                            </div>
+
+                            <div><label>Tipo de personagem</label></div>
+                            <div>
+                                <input type="radio" name="tipo" id="heroi" value="heroi" checked />
+                                <label for="heroi">Herói/Heroína</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="tipo" id="vilao" value="heroi" />
+                                <label for="vilao">Vilão / Vilã</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
         </form>
     </main>
 
