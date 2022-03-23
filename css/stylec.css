@@ -78,6 +78,28 @@ form{
   width: 100%;
 }
 
+input[type=text],[type=date], .coluna .texta {
+  border-radius: 5px;
+  border: 1px solid #e0c3fc;
+  outline: none;
+  width: 100%;    
+  font-size:0.8rem;
+  padding: 5px;
+  opacity: 0.8;   
+}
+
+input[type=text],[type=date]{
+  height: 40px;
+}
+
+input[type=textarea]{
+  height:90px;
+}
+
+label{
+  display: block;
+  margin-bottom: 2px;
+}
 
 footer {
   display: flex;
