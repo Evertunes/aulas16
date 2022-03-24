@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "indie", sans-serif;
+  border:none;
 }
 
 body {
@@ -30,75 +31,61 @@ header .menu__loja {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-main{
+.formulario {
+  background-color: #00669f;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-form{
-  background-color: #00669f;
-  position:relative;
-  width: 954px;
-  height: 832px;
-  margin:5%;
-  border-radius: 5%;
-  }
-.container{
-  padding:5%;
+.formulario h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.titulos {
+  text-align: center;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-.required:before {
-  content:"*"; 
-}
-
-.containerconteudo{
-  padding-top: 30px;
-  gap:30px;
-  display: flex;
-  flex-direction: row;
+.dados__basicos {
   width: 100%;
-}
-
-.coluna{
-  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 15px;
 }
 
-.coluna label{
-  display: block;
-}
-
-.coluna input{
-  width: 100%;
-}
-
-input[type=text],[type=date], .coluna .texta {
-  border-radius: 5px;
-  border: 1px solid #e0c3fc;
-  outline: none;
-  width: 100%;    
-  font-size:0.8rem;
-  padding: 5px;
-  opacity: 0.8;   
-}
-
-input[type=text],[type=date]{
-  height: 40px;
-}
-
-input[type=textarea]{
-  height:90px;
-}
-
-label{
+label {
   display: block;
   margin-bottom: 2px;
+}
+
+.container__form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.botao{
+  align-self:center;
 }
 
 footer {

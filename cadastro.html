@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro Super-Herói</title>
-    <link rel="stylesheet" href="/css/stylec.css" />
+    <link rel="stylesheet" href="css/stylec.css" />
 </head>
 
 <body>
@@ -20,88 +20,82 @@
         </div>
     </header>
 
-    <main>
-        <form action="">
-            <fieldset>
-                <div class="container">
-                    <h1>Adicionar seu super-herói</h1>
-                    <span class="add">Adicione seu personagem favorito completando as informações</span>
-                    <div class="containerconteudo">
-                        <div class="coluna">
-                            <div>
-                                <label class="required" for="nome">Nome</label>
-                                <input type="text" name="nome" id="nome" required />
-                            </div>
-                            <div>
-                                <label for="date">Data de Nascimento</label>
-                                <input type="date" name="date" id="date" />
-                            </div>
-                            <div class="texta">
-                                <input type="textarea" name="descricao" id="'descricao" placeholder="Descrição" />
-                            </div>
+    <div class="formulario">
+
+
+        <form action="" method="post">
+            <div class="titulos">
+                <h1>Adicione seu Super-Herói</h1>
+                <span>Adicione seu personagem favorito completando as informações</span>
+            </div>
+            <div class="container__form">
+                
+                <fieldset class="dados__basicos">
+                    
+                    <div>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <div>
+                        <label for="nome">Data de Nascimento </label>
+                        <input type="date" name="data" id="data">
+                    </div>
+
+                    <div>
+                        <textarea name="sobre" id="sobre" placeholder="Descrição"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="dadosheroi">
+                        <label for="especie">Espécie</label>
+                        <select name="especie" id="especie">
+                            <optgroup label="Espécie">
+                                <option value="mutante">Mutante</option>
+                                <option value="Humano">Humano</option>
+                                <option value="alienigena">Alienígena</option>
+                            </optgroup>
+                        </select>
+                        <div>
+                            <label for="image">Adicionar foto</label>
+                            <input type="file" name="image" id="image">
                         </div>
 
-                        <div class="coluna">
-                            <div>
-                                <label class="required">Espécie</label>
-                            </div>
-                            <div>
-                                <select name="especie">
-                                    <option value="text">Mutante</option>
-                                    <option value="text">Alien</option>
-                                    <option value="text">Humano</option>
-                                </select>
-                            </div>
+                        <div class="poderes">
 
-                            <div>
-                                <label>Adicionar foto</label>
-                                <input type="file" name="imagem" id="imagem" placeholder="selecione uma imagem" />
-                            </div>
-                            <div class="poder">
-                                <div class="poderes">
-                                    <label>Poderes</label>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <div class="check">
-                                            <input type="checkbox" id="voar" name="voar" />
-                                            <label for="voar">Voar</label>
-                                        </div>
+                            <label for="poder">Poderes</label>
 
-                                        <div class="check">
-                                            <input type="checkbox" id="forca" name="forca" />
-                                            <label for="forca">Super Força</label>
-                                        </div>
-                                        <div class="check">
-                                            <input type="checkbox" id="laser" name="laser" />
-                                            <label for="laser">Visão de raio laser</label>
-                                        </div>
-                                        <div class="check">
-                                            <input type="checkbox" id="rico" name="rico" />
-                                            <label for="rico">Super rico</label>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="container__check">
+                                <input type="checkbox" name="poder" id="poder" value="voar"> Voar
+                                <input type="checkbox" name="poder" id="poder" value="superinteligencia"> Super
+                                Inteligência
+                                <input type="checkbox" name="poder" id="poder" value="laser"> Visão de raio laser
+                                <input type="checkbox" name="poder" id="poder" value="rico"> Super Rico
                             </div>
-                            <div>
-                                <hr size="5" width="100%" />
-                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="personagem">
+                                <input type="radio" name="personagem" id="personagem" value="heroiheroina">Herói/Heroína
+                            </label>
+                        </div>
 
-                            <div><label>Tipo de personagem</label></div>
-                            <div>
-                                <input type="radio" name="tipo" id="heroi" value="heroi" checked />
-                                <label for="heroi">Herói/Heroína</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="tipo" id="vilao" value="heroi" />
-                                <label for="vilao">Vilão / Vilã</label>
-                            </div>
+                        <div>
+                            <label for="vilao">
+                                <input type="radio" name="personagem" id="vilao" value="vilaovila">Vilão/Vilã
+                            </label>
                         </div>
                     </div>
-                </div>
+            </div>
 
-        </form>
-    </main>
+            <div class="botao">
+                <input type="submit" value="Adicionar">
+            </div>
+
+            </fieldset>
+    </div>
+    </form>
+    </div>
 
     <footer>
         <span>Todos os direitos reservados a FRONT END 1</span>
