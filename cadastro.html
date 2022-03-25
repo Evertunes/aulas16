@@ -42,7 +42,7 @@
                         <input type="date" name="data" id="data">
                     </div>
 
-                    <div>
+                    <div class="caixatext">
                         <textarea name="sobre" id="sobre" placeholder="Descrição"></textarea>
                     </div>
                 </fieldset>
@@ -56,7 +56,7 @@
                                 <option value="alienigena">Alienígena</option>
                             </optgroup>
                         </select>
-                        <div>
+                        <div class="image">
                             <label for="image">Adicionar foto</label>
                             <input type="file" name="image" id="image">
                         </div>
@@ -66,26 +66,28 @@
                             <label for="poder">Poderes</label>
 
                             <div class="container__check">
-                                <input type="checkbox" name="poder" id="poder" value="voar"> Voar
-                                <input type="checkbox" name="poder" id="poder" value="superinteligencia"> Super
-                                Inteligência
-                                <input type="checkbox" name="poder" id="poder" value="laser"> Visão de raio laser
-                                <input type="checkbox" name="poder" id="poder" value="rico"> Super Rico
+                              <div><input type="checkbox" name="poder" id="poder" value="voar"> Voar</div>
+                              <div><input type="checkbox" name="poder" id="poder" value="superinteligencia"> Super Inteligência</div>
+                                <div><input type="checkbox" name="poder" id="poder" value="laser"> Visão de raio laser</div>
+                                <div><input type="checkbox" name="poder" id="poder" value="rico"> Super Rico</div>
                             </div>
                         </div>
                         <hr>
-                        <div>
+                        
+                        <div class="person">
+                            <label for="personagem">Tipo de personagem</label>
                             <label for="personagem">
                                 <input type="radio" name="personagem" id="personagem" value="heroiheroina">Herói/Heroína
                             </label>
                         </div>
 
-                        <div>
+                        <div class="enemy">
                             <label for="vilao">
                                 <input type="radio" name="personagem" id="vilao" value="vilaovila">Vilão/Vilã
                             </label>
                         </div>
                     </div>
+                   
             </div>
 
             <div class="botao">
